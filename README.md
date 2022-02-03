@@ -66,7 +66,18 @@
    
    [<img src="https://user-images.githubusercontent.com/65466643/152368866-2b0d051e-a730-4468-bd6f-7e357c98f9d5.png" width="600"/>](image11.png)
    
-  Last work with local files, we need to bring the dlls to the project directory. They can be found in the Halide and Vcpkg bin folders.
+  Last work with local files, we need to bring the dlls to the project directory. They can be found in the Halide and Vcpkg bin folders. jpeg and png lib dll files at ```vcpkg\installed\x64-windows\bin``` and Halide lib dll files at ```Halidex64\bin\Release```. Copy all of the .dll files found and paste it inside your Project windows file ```HalideProject\Teste\x64\Release```.
+  
+   [<img src="https://user-images.githubusercontent.com/65466643/152376273-4a701798-fa6a-4b7d-bf31-436471ff15de.png" width="500"/>](image14.png)
+   [<img src="https://user-images.githubusercontent.com/65466643/152376263-7a791750-3071-4bf6-a35c-5916539928a3.png" width="500"/>](image13.png)
+  
+  Copy all that .dll files from each folders to the windows folder on project directory ```HalideProject\Teste\x64\Release```.
+  
+  This is what we get:
+  
+  [<img src="https://user-images.githubusercontent.com/65466643/152377515-12b68c81-af2b-4936-8ef0-2942ea317520.png" width="320"/>](image15.png)
+ 
+
 
 
 #
