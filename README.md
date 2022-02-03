@@ -31,8 +31,8 @@
    ``` 
    
 ### 4. Now configure MS Visual Studio
-   
-   Creating a new empty project
+
+#### 4.1 Creating a new empty project
    
    [<img src="https://user-images.githubusercontent.com/65466643/152353955-fc2dae8e-c434-4e2a-8280-4cd35ce9910a.png" width="470"/>](image.png)
    
@@ -46,6 +46,9 @@
    [<img src="https://user-images.githubusercontent.com/65466643/152357723-2476cba6-90cc-410a-b699-4729b7a6e3c1.png" width="450"/>](image7.png)
    
    Now, run the project on Local Windows Debugger. It will return error because you´re running nothing, but don´t worry, for now we only need the generated windows release folder in the project local files.
+   
+   #
+   #### 4.2. Files management
    
    At project files directory, create two folders where the includes and libraries files will be stored.
    
@@ -76,15 +79,56 @@
   This is what we get:
   
   [<img src="https://user-images.githubusercontent.com/65466643/152377515-12b68c81-af2b-4936-8ef0-2942ea317520.png" width="320"/>](image15.png)
- 
+  
+  #
+  
+#### 4.3. Back to Visual studio last configurations
+
+Open project properties
+
+[<img src="https://user-images.githubusercontent.com/65466643/152379394-233f0efa-2fbd-42b2-9675-c9e89d47308c.png" width="450"/>](image20.png)
+
+Change the platform Toolset for the Clang build tools and C++ language 17 support.
+
+[<img src="https://user-images.githubusercontent.com/65466643/152383700-736a0c41-8512-4d0d-92e9-a638e7c9adc5.png" width="520"/>](image21.png)
+
+Allow vcpkg intall libraries but disable AutoLink.
+
+[<img src="https://user-images.githubusercontent.com/65466643/152383842-e52de0d7-1597-4718-9b27-f14434be7571.png" width="520"/>](image22.png)
+
+In vc++ directories, edit the include field with your include folder created on step [4.2](#4.2.-Files-management) directory, add ```Halidex64\share\Halide\tools``` either. In library field, edit to the libraries folder dirctory. 
+
+[<img src="https://user-images.githubusercontent.com/65466643/152381028-81f015ff-4e30-4c2d-8648-5f8194a14f55.png" width="550"/>](image23.png)
+
+Add include folder to additional include packages too.
+
+[<img src="https://user-images.githubusercontent.com/65466643/152382384-38f72b98-b228-4d1c-9f31-fdf11ffcfc7c.png" width="550"/>](image30.png)
+
+Add libraries folder to additional library packages too.
+
+[<img src="https://user-images.githubusercontent.com/65466643/152382431-ffe7c29d-cb39-4f33-a66d-461c6d9fca80.png" width="550"/>](image31.png)
 
 
+Add the libraries calls on the linker: ```Halide.lib```, ```jpeg.lib``` and ```libpng16.lib```
+
+[<img src="https://user-images.githubusercontent.com/65466643/152382442-6f650353-3901-4ed9-bf9a-d9c242fd656a.png" width="550"/>](image32.png)
+
+**Apply all changes** 
 
 #
-### Visual Studio Packages
-[<img src="https://user-images.githubusercontent.com/65466643/152351052-a5cbd28c-3099-47fe-a0d3-81074338989e.png" width="470"/>](image2.png)
-[<img src="https://user-images.githubusercontent.com/65466643/152351059-9662eb47-3da3-4fbb-b3fe-f07c9c4894dc.png" width="470"/>](image3.png)
-[<img src="https://user-images.githubusercontent.com/65466643/152351074-0d985808-e10b-48fb-866f-9c01095cad38.png" width="470"/>](image4.png)
+
+### 5. Now we ae ready to start coding!
+
+#
+### Additonals
+
+#### Visual Studio necessary Packages
+
+[<img src="https://user-images.githubusercontent.com/65466643/152351052-a5cbd28c-3099-47fe-a0d3-81074338989e.png" width="500"/>](image2.png)
+
+[<img src="https://user-images.githubusercontent.com/65466643/152351059-9662eb47-3da3-4fbb-b3fe-f07c9c4894dc.png" width="500"/>](image3.png)
+
+[<img src="https://user-images.githubusercontent.com/65466643/152351074-0d985808-e10b-48fb-866f-9c01095cad38.png" width="500"/>](image4.png)
 
 ---
 #### Author
