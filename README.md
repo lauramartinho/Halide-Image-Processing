@@ -62,11 +62,11 @@
    
    We are going to have something like this:
    
-   [<img src="https://user-images.githubusercontent.com/65466643/152365771-b8d2e156-8f89-45a3-ae0d-816d4dbab9c4.png" width="500"/>](image11.png)
-  
-  
-
-
+   [<img src="https://user-images.githubusercontent.com/65466643/152368879-4e67c286-9939-43bb-972b-ff4de1aaa003.png" width="600"/>](image12.png)
+   
+   [<img src="https://user-images.githubusercontent.com/65466643/152368866-2b0d051e-a730-4468-bd6f-7e357c98f9d5.png" width="600"/>](image11.png)
+   
+  Last work with local files, we need to bring the dlls to the project directory. They can be found in the Halide and Vcpkg bin folders.
 
 
 #
